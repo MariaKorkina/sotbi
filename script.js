@@ -12,6 +12,7 @@ async function getResponse () {
     })
   }
   console.log(newArr);
+  
   let indexDel1 = getRandomIntInclusive(0, newArr.length-1)
   newArr.splice(indexDel1,1);
  console.log(indexDel1);
@@ -21,8 +22,6 @@ async function getResponse () {
   console.log(indexDel2);
   console.log(newArr);
   
-  // delete newArr[(Math.floor(Math.random()*newArr.length)]
-  // console.log(newArr);
 }
 
 function getRandomIntInclusive(min, max) {
