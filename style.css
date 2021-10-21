@@ -13,26 +13,12 @@ a {
     width: 295px;
     height: 100px;
  }
-.underlined {
-    position: relative;
-    color: #00a650; /*задаём цвет тексту*/
-    cursor: pointer;
-    line-height: 1; /*задаём высоту строки*/
-    text-decoration: none; /*убираем подчёркивание*/
+.underlined:hover{
+  text-decoration: underline;
+  text-decoration-color: rgb(250, 114, 64);
+  -moz-text-decoration-color: rgb(250, 114, 64);
+  text-decoration-thickness: 5px;
 }
-.underlined:after {
-    display: block;
-    position: absolute;
-    left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
-    width: 0;/*задаём длину линии до наведения курсора*/
-    height: 2px; /*задаём ширину линии*/
-    background-color: #000; /*задаём цвет линии*/
-    content: "";
-    transition: width 0.3s ease-out; /*задаём время анимации*/
+.underlined:after{
+   transition: width 0.3s ease-out; 
 }
- 
-.underlined:hover:after,
-.underlined:focus:after {
-    width: 100%; /*устанавливаем значение 100% чтобы параграф подчёркивалась полностью*/
-}
- 
