@@ -1,6 +1,6 @@
 //3
 async function getResponse () {
-  let response = await fetch ('http://jsonplaceholder.typicode.com/users')
+  let response = await fetch ('https://jsonplaceholder.typicode.com/users')
   let content = await response.json()
   console.log(content); //получили исходный массив пользователей
   
