@@ -1,0 +1,38 @@
+.container {
+    display: inline-block;
+    margin: 40px;
+    background: url("logo.png") no-repeat 50% 50%;
+    background-size: 70%;
+    border: 1px solid #E1E1E1;
+    border-radius: 7px;
+    position: relative;
+}
+
+a {
+    display: block;
+    width: 295px;
+    height: 100px;
+ }
+.underlined {
+    position: relative;
+    color: #00a650; /*задаём цвет тексту*/
+    cursor: pointer;
+    line-height: 1; /*задаём высоту строки*/
+    text-decoration: none; /*убираем подчёркивание*/
+}
+.underlined:after {
+    display: block;
+    position: absolute;
+    left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;/*задаём длину линии до наведения курсора*/
+    height: 2px; /*задаём ширину линии*/
+    background-color: #000; /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+ 
+.underlined:hover:after,
+.underlined:focus:after {
+    width: 100%; /*устанавливаем значение 100% чтобы параграф подчёркивалась полностью*/
+}
+ 
