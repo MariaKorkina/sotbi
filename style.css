@@ -8,17 +8,25 @@
     position: relative;
 }
 
-a {
+.yandex {
     display: block;
     width: 295px;
     height: 100px;
  }
-.underlined:hover{
-  text-decoration: underline;
-  text-decoration-color: rgb(250, 114, 64);
-  -moz-text-decoration-color: rgb(250, 114, 64);
-  text-decoration-thickness: 5px;
+
+ 
+ a {
+ 
+    color: black;
+    text-decoration: none;
+    
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
 }
-.underlined:after{
-   transition: width 0.3s ease-out; 
+
+a:hover, a:focus {
+    background-size: 100% 2px;
 }
