@@ -15,7 +15,7 @@
  }
 
  
- a {
+ .underlined {
  
     color: black;
     text-decoration: none;
@@ -27,6 +27,6 @@
     transition: background-size .3s;
 }
 
-a:hover, a:focus {
+.underlined:hover, .underlined:focus {
     background-size: 100% 2px;
 }
